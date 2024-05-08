@@ -42,10 +42,11 @@ Is the harmonic mean of precision and recall. It provides a balanced measure of 
 ![](https://lh7-us.googleusercontent.com/iwryxk9TU01b52jIuucaqwrsUfjweunUejGU6fdcKWifiZ8BqLc-Q-7iPelDMli6mBiG1qt9jeBsJ8pfjFdmAb0wWOyFWtfU_zZR2K2ZZhPrACb7M51fB0Iwshw7HO5_QSycWfODaCJ036ZDvOZM04o)
 
 1. Labelme Ground truth BB format: .xml
-``
+```
 <bndbox>
    <xmin>x</xmin> <ymin>y</ymin> <xmax>x+w</xmax> <ymax>y+h</ymax>
- </bndbox>``
+ </bndbox>
+```
 
 3. COCO BB format: in JSON 
 
@@ -93,12 +94,12 @@ Similarly, we can look into all BB formats, this tool supports almost all format
 
 ### A brief about the Evalv metrics toolkit has considered<a id="a-brief-about-the-evalv-metrics-toolkit-has-considered"></a>
 
-**AP@t** : Average Precision at IOU = t
+-**AP@t** : Average Precision at IOU = t
 
 
-**AP@[.5:.05:.95]**: Starting with IOU threshold from 50% to 95% with step difference of 5%.<a id="ap50595--starting-with-iou-threshold-from-50-to-95-with-step-difference-of-5"></a>
+-**AP@[.5:.05:.95]**: Starting with IOU threshold from 50% to 95% with step difference of 5%.<a id="ap50595--starting-with-iou-threshold-from-50-to-95-with-step-difference-of-5"></a>
 
-**APS, APM, and APL**: APS only evaluates the ground-truth objects of small sizes (area < 32^2 pixels); APM considers only ground-truth objects of medium sizes (32^2 < area < 96^2 pixels); APL considers large ground-truth objects (area > 96^2) only.<a id="aps-apm-and-apl-aps-only-evaluates-the-ground-truth-objects-of-small-sizes-area--322-pixels-apm-considers-only-ground-truth-objects-of-medium-sizes-322--area--962-pixels-apl-considers-large-ground-truth-objects-area--962-only"></a>
+-**APS, APM, and APL**: APS only evaluates the ground-truth objects of small sizes (area < 32^2 pixels); APM considers only ground-truth objects of medium sizes (32^2 < area < 96^2 pixels); APL considers large ground-truth objects (area > 96^2) only.<a id="aps-apm-and-apl-aps-only-evaluates-the-ground-truth-objects-of-small-sizes-area--322-pixels-apm-considers-only-ground-truth-objects-of-medium-sizes-322--area--962-pixels-apl-considers-large-ground-truth-objects-area--962-only"></a>
 
 ![](https://lh7-us.googleusercontent.com/bs0MEnimHl_lMOfXiXtw9UPjMEVcSwjoOF7xsdK70cuCXcod1a8ML7NCy3kkOWs2DMGDUzn41XxhRweZezEKGPTXIYsSSzfwhp9zn3ZV3fCPpuJ_AvmFbw6QxpATcbHNXXTr9ousD8tLIXZe9FmZVz0)
 
@@ -113,15 +114,15 @@ Examples being used here, is already present in[ GitHub repo](https://github.com
 
 ![](https://lh7-us.googleusercontent.com/iQNHDQcuVCRATzRs68nuJAu5fWgb3TLAYR4_fK2kqBe0JPVyYkmrMcKxVChQXUfvZ8CSf1cIEM6K1U1QMiqG5GnkCa_ll0mpTa96ughNT2ozkwn6XDNCJAMOmK3aLX2KFqaZGqKLqQ2G6XNshZfc890)
 
-**RESULT**: 
+-**RESULT**: 
 
 ![](https://lh7-us.googleusercontent.com/LUg5xgL7Obj_gyTMdgjhKVgiPHC2CuasLJnhvkVahm47NtBclGyKEu3Y1AE2JY9ck4cTGqw4rSNfu2cVvuermIvMW5QC3FgFwMfq9xCyBF8gtwXExovwA3dn_Xx31CsnesVlzT73ocm6YfkuMmN1_kQ)
 
-**Output Folder**: 
+-**Output Folder**: 
 
 ![](https://lh7-us.googleusercontent.com/QkEPrm34GdU7BCja8i_gMXAHs1945LeAFkbOGNnR1Wl3nPqDJPj61F3sAQQ3jM5MZHzJk3OKeXigrepqBjvxU8Kfg2R1ttFOq6E6z4Uz6_L2I-SNaJE7RXh-hZli6Y5H56vJlSlz1PpUXadVuV513HY)
 
-**References**: 
+### References: 
 
 <https://pro.arcgis.com/en/pro-app/latest/tool-reference/image-analyst/how-compute-accuracy-for-object-detection-works.htm>
 
